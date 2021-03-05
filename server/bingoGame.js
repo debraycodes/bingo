@@ -1,0 +1,1 @@
+const getRandomObj = require('./getRandomObj');
