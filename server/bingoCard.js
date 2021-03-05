@@ -1,10 +1,12 @@
 class BingoCard {
   constructor(player) {
+    // Array for  each Bingo letter
     this.B = [];
     this.I = [];
     this.N = [];
     this.G = [];
     this.O = [];
+    // Player assignment
     this.player = player;
   }
   fillCard(){
