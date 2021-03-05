@@ -47,7 +47,7 @@ class BingoCard {
   };
 };
 
-// let card = new BingoCard()
-// card.fillCard()
-// console.log('B: ' + card.B, 'I: ' + card.I, 'N: ' + card.N, 'G: ' + card.G, 'O: ' + card.O);
-module.exports = BingoCard;
+let card = new BingoCard()
+card.fillCard()
+console.log('B: ' + card.B, 'I: ' + card.I, 'N: ' + card.N, 'G: ' + card.G, 'O: ' + card.O);
+// module.exports = BingoCard;

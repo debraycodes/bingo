@@ -69,10 +69,41 @@ class BingoGame {
           index++
         };
         // I
-
+        while (index < I.length && calledNumbers.includes(I[index])) {
+          if (!calledNumbers.includes(I[index + 1])){
+            matches = false;
+            return;
+          }
+          numMatches++;
+          index++
+        };
         // N
+        while (index < N.length && calledNumbers.includes(N[index])) {
+          if (!calledNumbers.includes(N[index + 1])){
+            matches = false;
+            return;
+          }
+          numMatches++;
+          index++
+        };
         // G
+        while (index < G.length && calledNumbers.includes(G[index])) {
+          if (!calledNumbers.includes(G[index + 1])){
+            matches = false;
+            return;
+          }
+          numMatches++;
+          index++
+        };
         // O
+                while (index < O.length && calledNumbers.includes(O[index])) {
+          if (!calledNumbers.includes(O[index + 1])){
+            matches = false;
+            return;
+          }
+          numMatches++;
+          index++
+        };
       })
     } else {
       // Regular B.I.N.G.O. game
