@@ -1,4 +1,6 @@
 const getRandomObj = (numbers) => {
+  // Takes in array of bingo numbers and chooses random number
+  // from range and puts in object with corresponding letter
   let randomNumber = Math.floor(Math.random() * numbers.length -1);
   return (numbers[randomNumber] <= 15) ? {
     letter: 'B',

@@ -19,11 +19,14 @@ class BingoGame {
       71,72,73,74,75
     ];
   }
+  // Create card(s)
   spawnCards(player){
+    // If player  has one card
     if (player.numCards == 1) {
       let card = new BingoCard(player);
       this.cards.push(card)
     } else {
+      //
       let count = 0;
       while (count < player.numCards) {
         let card = new BingoCard(player);
@@ -59,13 +62,14 @@ class BingoGame {
         let matches = true;
         while (index < B.length && calledNumbers.includes(B[index])) {
           if (!calledNumbers.includes(B[index + 1])){
-            matches =  false;
+            matches = false;
             return;
-          };
+          }
           numMatches++;
           index++
         };
         // I
+
         // N
         // G
         // O
