@@ -1,11 +1,11 @@
 class BingoCard {
   constructor(player) {
-    this.B = [],
-    this.I = [],
-    this.N = [],
-    this.G = [],
-    this.O = [],
-    this.player = player
+    this.B = [];
+    this.I = [];
+    this.N = [];
+    this.G = [];
+    this.O = [];
+    this.player = player;
   }
   fillCard(){
     // B
@@ -44,7 +44,8 @@ class BingoCard {
         this.O.push(num + 61);
       };
     };
-  };
+  }
+
 };
 
 // let card = new BingoCard()
