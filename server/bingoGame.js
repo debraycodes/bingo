@@ -80,7 +80,7 @@ class BingoGame {
             return;
           }
           numMatches++;
-          index++
+          index++;
         };
         // I
         index = 0;
@@ -88,6 +88,7 @@ class BingoGame {
         while (index < B.length && calledNumbers.includes(B[index])) {
           if (!calledNumbers.includes(B[index + 1])){
             matches = false;
+            this.isWinner = false;
             return;
           }
           numMatches++;
@@ -128,9 +129,9 @@ class BingoGame {
 
         }
         // [G0-4] If  entire G column has been called - Winner
-        if (calledNumbers.includes(card.B[0]) && calledNumbers.includes(card.B[1])
-            && calledNumbers.includes(card.B[2]) && calledNumbers.includes(card.B[3])
-            && calledNumbers.includes(card.B[4])) {
+        if (calledNumbers.includes(card.O[0]) && calledNumbers.includes(card.O[1])
+            && calledNumbers.includes(card.O[2]) && calledNumbers.includes(card.O[3])
+            && calledNumbers.includes(card.O[4])) {
 
         }
       })
